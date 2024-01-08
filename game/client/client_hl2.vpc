@@ -15,7 +15,7 @@ $Configuration
 	$Compiler
 	{
 		$AdditionalIncludeDirectories	".\hl2;.\hl2\elements;$SRCDIR\game\shared\hl2;$BASE"
-		$PreprocessorDefinitions		"$BASE;HL2_CLIENT_DLL"
+		$PreprocessorDefinitions		"$BASE;HL2_CLIENT_DLL;GAMEPADUI"
 	}
 }
 
@@ -26,6 +26,11 @@ $Project "Client (HL2)"
 		$File	"hud_chat.cpp"
 		$File	"c_team_objectiveresource.cpp"
 		$File	"c_team_objectiveresource.h"
+
+		$Folder "HL2SR MOD"
+		{
+			$File	"hl2\hud_velocity.cpp"
+		}
 
 		$Folder	"HL2 DLL"
 		{
